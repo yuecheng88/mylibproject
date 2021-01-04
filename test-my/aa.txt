@@ -1,0 +1,2 @@
+System.out.println(1620 + 15000 + 600 +  1755+702);
+System.out.println(50000 * 0.05);
