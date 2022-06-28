@@ -4,6 +4,9 @@ package com.xiao.thread;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.locks.AbstractQueuedSynchronizer;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  * 多线程
@@ -28,6 +31,7 @@ public class MyThread extends  Thread{
         for(int i=0;i<5;i++) {
             es.execute(new MyRunable());
         }
+
     }
     @Override
     public void run() {
