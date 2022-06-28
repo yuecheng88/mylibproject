@@ -1,8 +1,9 @@
 import com.alibaba.fastjson.JSON;
 
-import java.sql.Time;
-import java.util.*;
-import java.util.concurrent.atomic.AtomicLong;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Test {
 
@@ -20,14 +21,15 @@ public class Test {
 //                * 500 20线程            4496 ms
 //                * 500 50线程            4813 ms
            //int [] a = {0,5,8,10,24,25,26,30,32,33,36,50,68,88,98};
+        int [] a = {0,2,5,7,8,11} ;
 
-      int []a = new int[]{1,1,3};
-      a[3] = 1;
-        System.out.println(a[3]);
-    }
+//        System.out.println(binarySearch(a,6,0,a.length-1));
+//        String s = "fsfsfsfsfsf" ;
+//        Test test = JSON.parseObject(s,Test.class) ;
 
-    private static  int randInt(int n){
-        return (int)(Math.random() * n +1);
+        System.out.println(4^9^8^8^15^9^4);
+
+        System.out.println(4&9&8&8&15);
     }
     static final int MAXIMUM_CAPACITY = 1 << 30;
     static final int tableSizeFor(int cap) {
@@ -81,7 +83,4 @@ class AA implements Runnable {
             e.printStackTrace();
         }
     }
-
-
 }
-
