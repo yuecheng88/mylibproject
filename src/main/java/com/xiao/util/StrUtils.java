@@ -9,5 +9,6 @@ public class StrUtils {
         String s = "123abc计算" ;
         System.out.println(s.getBytes().length);
         System.out.println(s.length());
+        System.out.println("hhsfskfjskfskfk");
     }
 }
